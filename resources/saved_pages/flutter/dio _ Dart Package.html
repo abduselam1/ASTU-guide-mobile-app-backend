@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://pub.dev/packages/dio -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" async="" src="./dio _ Dart Package_files/analytics.js.download"></script><script src="./dio _ Dart Package_files/cb=gapi.loaded_0" async=""></script><script async="async" src="./dio _ Dart Package_files/js"></script>
+  <script src="./dio _ Dart Package_files/gtag.js.download"></script>
+
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dart_lang">
+  <meta name="twitter:description" content="A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.">
+  <meta name="twitter:image" content="https://pub.dev/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g">
+
+  <!-- Facebook OG tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dart packages">
+  <meta property="og:title" content="dio | Dart Package">
+  <meta property="og:description" content="A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.">
+  <meta property="og:image" content="https://pub.dev/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g">
+  <meta property="og:url" content="https://pub.dev/packages/dio">
+
+  <title>dio | Dart Package</title>
+  <link href="./dio _ Dart Package_files/css" rel="stylesheet">
+  <meta content="/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g">
+  <link rel="shortcut icon" href="https://pub.dev/favicon.ico?hash=nk4nss8c7444fg0chird9erqef2vkhb8">
+  <link rel="search" type="application/opensearchdescription+xml" title="Dart packages" href="https://pub.dev/static/osd.xml?hash=uhkvaq6tn5ujmk0so48em6cukeb08c2d">
+  <link rel="canonical" href="https://pub.dev/packages/dio">
+  <meta name="description" content="A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.">
+  <link rel="alternate" type="application/atom+xml" title="Updated Packages Feed for Pub" href="https://pub.dev/feed.atom">
+  <link href="./dio _ Dart Package_files/material-components-web.min.css" rel="stylesheet" type="text/css">
+  <link href="./dio _ Dart Package_files/github.css" rel="stylesheet">
+  <link href="./dio _ Dart Package_files/github-markdown.css" rel="stylesheet" type="text/css">
+  <link href="./dio _ Dart Package_files/style.css" rel="stylesheet" type="text/css">
+  <script src="./dio _ Dart Package_files/material-components-web.min.js.download" defer="defer"></script>
+  <script src="./dio _ Dart Package_files/script.dart.js.download" defer="defer"></script>
+  <meta name="google-signin-client_id" content="818368855108-e8skaopm5ih5nbb82vhh66k7ft5o7dn3.apps.googleusercontent.com">
+  <script src="./dio _ Dart Package_files/platform.js.download" defer="defer" gapi_processed="true"></script>
+  <meta name="pub-page-data" content="eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJkaW8iLCJ2ZXJzaW9uIjoiMy4wLjEwIiwibGlrZXMiOjE1ODAsInB1Ymxpc2hlcklkIjoiZmx1dHRlcmNoaW5hLmNsdWIiLCJpc0Rpc2NvbnRpbnVlZCI6ZmFsc2V9fQ==">
+</head>
+<body class="">
+
+<div class="site-header">
+  <button class="hamburger"></button>
+  <a class="logo" href="https://pub.dev/">
+    <img class="site-logo" src="./dio _ Dart Package_files/pub-dev-logo-2x.png" alt="pub logo">
+  </a>
+  <div class="site-header-space"></div>
+  <div class="site-header-mask"></div>
+  <div class="site-header-search">
+    <form action="https://pub.dev/packages" method="GET">
+      <input class="site-header-search-input" name="q" placeholder="New search..." autocomplete="on">
+    </form>
+  </div>
+  <div class="site-header-nav scroll-container">
+    <div class="nav-login-container">
+      <button class="nav-main-button link" id="-account-login">Sign in</button>
+    </div>
+    <div class="nav-container nav-help-container hoverable">
+      <button class="nav-main-button">Help</button>
+      <div class="nav-hover-popup">
+        <div class="nav-table-columns">
+          <div class="nav-table-column">
+            <h3>Pub.dev</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/search">Searching for packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/scoring">Package scoring and pub points</a>
+          </div>
+          <div class="nav-table-column">
+            <h3>Flutter</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/using-packages/">Using packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/developing-packages/">Developing packages and plugins</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+          </div>
+          <div class="nav-table-column">
+            <h3>Dart</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/get-started">Using packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Pub.dev <img class="foldable-icon" src="./dio _ Dart Package_files/nav-mobile-foldable-icon.svg"></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/search">Searching for packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/scoring">Package scoring and pub points</a>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Flutter <img class="foldable-icon" src="./dio _ Dart Package_files/nav-mobile-foldable-icon.svg"></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/using-packages/">Using packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/developing-packages/">Developing packages and plugins</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Dart <img class="foldable-icon" src="./dio _ Dart Package_files/nav-mobile-foldable-icon.svg"></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/get-started">Using packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="banner-container">
+</div>
+
+
+<main class="container">
+
+<div class="detail-wrapper -active -has-info-box">
+  
+
+<div class="detail-header -is-loose">
+  <div class="detail-container">
+    <div class="detail-header-outer-block">
+      <div class="detail-header-content-block">
+        <h1 class="title">
+dio 3.0.10
+
+<span class="pkg-page-title-copy">
+  <img class="pkg-page-title-copy-icon" data-copy-content="dio: ^3.0.10" data-ga-click-event="copy-package-version" src="./dio _ Dart Package_files/content-copy-icon.svg" title="Copy &quot;dio: ^3.0.10&quot; to clipboard">
+  <div class="pkg-page-title-copy-feedback"><span class="code">dio: ^3.0.10</span> copied to clipboard</div>
+</span>
+</h1>
+        <div class="metadata">
+Published <span>Aug 7, 2020</span>
+• <a class="-pub-publisher" href="https://pub.dev/publishers/flutterchina.club"><img class="-pub-publisher-shield" title="Published by a pub.dev verified publisher" src="./dio _ Dart Package_files/verified-publisher-blue.svg">flutterchina.club</a>
+
+
+
+</div>
+        <div class="detail-tags-and-like">
+          <div class="detail-tags"><div class="-pub-tag-badge">
+  <span class="tag-badge-main" title="Packages compatible with Dart SDK">Dart</span>
+  <span class="tag-badge-sub" title="Packages compatible with Dart running on a native platform (JIT/AOT)">native</span>
+  <span class="tag-badge-sub" title="Packages compatible with Dart compiled for the web">js</span>
+</div>
+<div class="-pub-tag-badge">
+  <span class="tag-badge-main" title="Packages compatible with Flutter SDK">Flutter</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the Android platform">Android</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the iOS platform">iOS</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the Web platform">web</span>
+</div>
+</div>
+          <div class="detail-like">
+              <button id="-pub-like-icon-button" class="mdc-icon-button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" aria-label="Like this package" data-ga-click-event="toggle-like" aria-hidden="true" aria-pressed="false" style="--mdc-ripple-fg-size:15px; --mdc-ripple-fg-scale:1.73333; --mdc-ripple-left:6px; --mdc-ripple-top:6px;">
+                <img height="18" width="18" src="./dio _ Dart Package_files/like-inactive.svg" class="mdc-icon-button__icon">
+                <img height="18" width="18" src="./dio _ Dart Package_files/like-active.svg" class="mdc-icon-button__icon mdc-icon-button__icon--on">
+              </button>
+              <span class="likes-count"><span id="likes-count">1.58K</span></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="detail-container">
+    <div class="detail-lead">
+      <div class="detail-metadata-toggle">
+        <div class="detail-metadata-toggle-icon">→</div>
+        <h3 class="detail-lead-title">Metadata</h3>
+      </div>
+      <p class="detail-lead-text">A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.</p>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-tabs">
+      
+<div class="detail-tabs-wide-header">
+  <div class="detail-container">
+    <ul class="detail-tabs-header">
+        <li class="detail-tab tab-button detail-tab-readme-title -active" role="button">Readme</li>
+        <li class="detail-tab tab-link detail-tab-changelog-title" role="button"><a href="https://pub.dev/packages/dio/changelog">Changelog</a></li>
+        <li class="detail-tab tab-link detail-tab-example-title" role="button"><a href="https://pub.dev/packages/dio/example">Example</a></li>
+        <li class="detail-tab tab-link detail-tab-installing-title" role="button"><a href="https://pub.dev/packages/dio/install">Installing</a></li>
+        <li class="detail-tab tab-link detail-tab-versions-title" role="button"><a href="https://pub.dev/packages/dio/versions">Versions</a></li>
+        <li class="detail-tab tab-link detail-tab-analysis-title" role="button"><a href="https://pub.dev/packages/dio/score">Scores</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="detail-container detail-body-main">
+  <div class="detail-tabs-content">
+      <section class="tab-content -active markdown-body">
+        <p>Language: <a href="https://github.com/flutterchina/dio/blob/master/README.md" rel="ugc">English</a> | <a href="https://github.com/flutterchina/dio/blob/master/README-ZH.md" rel="ugc">中文简体</a></p>
+<h1 class="hash-header" id="dio">dio <a href="https://pub.dev/packages/dio#dio" class="hash-link">#</a></h1>
+<p><a href="https://travis-ci.org/flutterchina/dio" rel="ugc"><img src="./dio _ Dart Package_files/vm.svg" alt="build status"></a>
+<a href="https://pub.dartlang.org/packages/dio" rel="ugc"><img src="./dio _ Dart Package_files/dio.svg" alt="Pub"></a>
+<a href="https://github.com/flutterchina/dio" rel="ugc"><img src="./dio _ Dart Package_files/platform-flutter_flutter web_dart vm-ff69b4.svg" alt="support"></a></p>
+<p>A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc.</p>
+<h2 class="hash-header" id="get-started">Get started <a href="https://pub.dev/packages/dio#get-started" class="hash-link">#</a></h2>
+<h3 class="hash-header" id="add-dependency">Add dependency <a href="https://pub.dev/packages/dio#add-dependency" class="hash-link">#</a></h3>
+<div class="-pub-pre-copy-container"><pre><code class="language-yaml hljs"><span class="hljs-attr">dependencies:</span>
+  <span class="hljs-attr">dio:</span> <span class="hljs-number">3.</span><span class="hljs-string">x</span> <span class="hljs-comment">#latest version</span>
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<blockquote>
+<p>In order to support Flutter Web, v3.x was heavily refactored, so it was not compatible with version 3.x See <a href="https://github.com/flutterchina/dio/blob/master/dio/CHANGELOG.md" rel="ugc">here</a> for a detailed list of updates.</p>
+</blockquote>
+<h3 class="hash-header" id="super-simple-to-use">Super simple to use <a href="https://pub.dev/packages/dio#super-simple-to-use" class="hash-link">#</a></h3>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">'package:dio/dio.dart'</span>;
+<span class="hljs-keyword">void</span> getHttp() <span class="hljs-keyword">async</span> {
+  <span class="hljs-keyword">try</span> {
+    Response response = <span class="hljs-keyword">await</span> Dio().<span class="hljs-keyword">get</span>(<span class="hljs-string">"http://www.google.com"</span>);
+    <span class="hljs-built_in">print</span>(response);
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">print</span>(e);
+  }
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="awesome-dio">awesome-dio <a href="https://pub.dev/packages/dio#awesome-dio" class="hash-link">#</a></h2>
+<p>🎉 A curated list of awesome things related to dio.</p>
+<h3 class="hash-header" id="plugins">Plugins <a href="https://pub.dev/packages/dio#plugins" class="hash-link">#</a></h3>
+<table><thead><tr><th>Plugins</th><th>Status</th><th>Description</th></tr></thead><tbody><tr><td><a href="https://github.com/flutterchina/dio/tree/master/plugins/cookie_manager" rel="ugc">dio_cookie_manager</a></td><td><a href="https://pub.dartlang.org/packages/dio_http2_adapter" rel="ugc"><img src="./dio _ Dart Package_files/dio_http2_adapter.svg" alt="Pub"></a></td><td>A cookie manager for Dio</td></tr><tr><td><a href="https://github.com/flutterchina/dio/tree/master/plugins/http2_adapter" rel="ugc">dio_http2_adapter</a></td><td><a href="https://pub.dartlang.org/packages/dio_cookie_manager" rel="ugc"><img src="./dio _ Dart Package_files/dio_cookie_manager.svg" alt="Pub"></a></td><td>A Dio HttpClientAdapter which support Http/2.0</td></tr><tr><td><a href="https://github.com/flutterchina/dio_flutter_transformer" rel="ugc">dio_flutter_transformer</a></td><td><a href="https://pub.dartlang.org/packages/dio_flutter_transformer" rel="ugc"><img src="./dio _ Dart Package_files/dio_flutter_transformer.svg" alt="Pub"></a></td><td>A Dio transformer especially for flutter, by which the json decoding will be in background with <code>compute</code> function.</td></tr><tr><td><a href="https://github.com/hurshi/dio-http-cache" rel="ugc">dio_http_cache</a></td><td><a href="https://pub.dartlang.org/packages/dio_http_cache" rel="ugc"><img src="./dio _ Dart Package_files/dio_http_cache.svg" alt="Pub"></a></td><td>A cache library for Dio, like <a href="https://github.com/VictorAlbertos/RxCache" rel="ugc">Rxcache</a> in Android. dio-http-cache uses <a href="https://github.com/tekartik/sqflite" rel="ugc">sqflite</a> as disk cache, and <a href="https://github.com/google/quiver-dart" rel="ugc">LRU</a> strategy as memory cache.</td></tr><tr><td><a href="https://github.com/trevorwang/retrofit.dart/" rel="ugc">retrofit</a></td><td><a href="https://pub.dartlang.org/packages/retrofit" rel="ugc"><img src="./dio _ Dart Package_files/retrofit.svg" alt="Pub"></a></td><td>retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.</td></tr></tbody></table>
+<h3 class="hash-header" id="related-projects">Related Projects <a href="https://pub.dev/packages/dio#related-projects" class="hash-link">#</a></h3>
+<p>Welcome to submit Dio's third-party plugins and related libraries <a href="https://github.com/flutterchina/dio/issues/347" rel="ugc">here</a> .</p>
+<h2 class="hash-header" id="table-of-contents">Table of contents <a href="https://pub.dev/packages/dio#table-of-contents" class="hash-link">#</a></h2>
+<ul>
+<li>
+<p><a href="https://pub.dev/packages/dio#examples">Examples</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#dio-apis">Dio APIs</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#request-options">Request Options</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#response-schema">Response Schema</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#interceptors">Interceptors</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#cookie-manager">Cookie Manager</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#handling-errors">Handling Errors</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#using-applicationx-www-form-urlencoded-format">Using application/x-www-form-urlencoded format</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#sending-formdata">Sending FormData</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#Transformer">Transformer</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#set-proxy-and-httpclient-config">Set proxy and HttpClient config</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#https-certificate-verification">Https certificate verification</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#httpclientadapter">HttpClientAdapter</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#cancellation">Cancellation</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#extends-dio-class">Extends Dio class</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#http2-support">Http2 support</a></p>
+</li>
+<li>
+<p><a href="https://pub.dev/packages/dio#features-and-bugs">Features and bugs</a></p>
+</li>
+</ul>
+<h2 class="hash-header" id="examples">Examples <a href="https://pub.dev/packages/dio#examples" class="hash-link">#</a></h2>
+<p>Performing a <code>GET</code> request:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">Response response;
+Dio dio = <span class="hljs-keyword">new</span> Dio();
+response = <span class="hljs-keyword">await</span> dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/test?id=12&amp;name=wendu"</span>);
+<span class="hljs-built_in">print</span>(response.data.toString());
+<span class="hljs-comment">// Optionally the request above could also be done as</span>
+response = <span class="hljs-keyword">await</span> dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/test"</span>, queryParameters: {<span class="hljs-string">"id"</span>: <span class="hljs-number">12</span>, <span class="hljs-string">"name"</span>: <span class="hljs-string">"wendu"</span>});
+<span class="hljs-built_in">print</span>(response.data.toString());
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Performing a <code>POST</code> request:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">response = <span class="hljs-keyword">await</span> dio.post(<span class="hljs-string">"/test"</span>, data: {<span class="hljs-string">"id"</span>: <span class="hljs-number">12</span>, <span class="hljs-string">"name"</span>: <span class="hljs-string">"wendu"</span>});
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Performing multiple concurrent requests:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">response = <span class="hljs-keyword">await</span> Future.wait([dio.post(<span class="hljs-string">"/info"</span>), dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/token"</span>)]);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Downloading a file:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">response = <span class="hljs-keyword">await</span> dio.download(<span class="hljs-string">"https://www.google.com/"</span>, <span class="hljs-string">"./xx.html"</span>);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Get response stream:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">Response&lt;ResponseBody&gt; rs = <span class="hljs-keyword">await</span> Dio().<span class="hljs-keyword">get</span>&lt;ResponseBody&gt;(url,
+ options: Options(responseType: ResponseType.stream), <span class="hljs-comment">// set responseType to `stream`</span>
+);
+<span class="hljs-built_in">print</span>(rs.data.stream); <span class="hljs-comment">//response stream</span>
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Get response with bytes:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">Response&lt;<span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">int</span>&gt;&gt; rs = <span class="hljs-keyword">await</span> Dio().<span class="hljs-keyword">get</span>&lt;<span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">int</span>&gt;&gt;(url,
+ options: Options(responseType: ResponseType.bytes), <span class="hljs-comment">// // set responseType to `bytes`</span>
+);
+<span class="hljs-built_in">print</span>(rs.data); <span class="hljs-comment">// List&lt;int&gt;</span>
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Sending FormData:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">FormData formData = <span class="hljs-keyword">new</span> FormData.fromMap({
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"wendux"</span>,
+    <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>,
+  });
+response = <span class="hljs-keyword">await</span> dio.post(<span class="hljs-string">"/info"</span>, data: formData);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Uploading multiple files to server by FormData:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">FormData.fromMap({
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"wendux"</span>,
+    <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>,
+    <span class="hljs-string">"file"</span>: <span class="hljs-keyword">await</span> MultipartFile.fromFile(<span class="hljs-string">"./text.txt"</span>,filename: <span class="hljs-string">"upload.txt"</span>),
+    <span class="hljs-string">"files"</span>: [
+      <span class="hljs-keyword">await</span> MultipartFile.fromFile(<span class="hljs-string">"./text1.txt"</span>, filename: <span class="hljs-string">"text1.txt"</span>),
+      <span class="hljs-keyword">await</span> MultipartFile.fromFile(<span class="hljs-string">"./text2.txt"</span>, filename: <span class="hljs-string">"text2.txt"</span>),
+    ]
+});
+response = <span class="hljs-keyword">await</span> dio.post(<span class="hljs-string">"/info"</span>, data: formData);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Listening the uploading progress:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">response = <span class="hljs-keyword">await</span> dio.post(
+  <span class="hljs-string">"http://www.dtworkroom.com/doris/1/2.0.0/test"</span>,
+  data: {<span class="hljs-string">"aa"</span>: <span class="hljs-string">"bb"</span> * <span class="hljs-number">22</span>},
+  onSendProgress: (<span class="hljs-built_in">int</span> sent, <span class="hljs-built_in">int</span> total) {
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"<span class="hljs-subst">$sent</span> <span class="hljs-subst">$total</span>"</span>);
+  },
+);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Post binary data by Stream:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-comment">// Binary data</span>
+<span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">int</span>&gt; postData = &lt;<span class="hljs-built_in">int</span>&gt;[...];
+<span class="hljs-keyword">await</span> dio.post(
+  url,
+  data: Stream.fromIterable(postData.map((e) =&gt; [e])), <span class="hljs-comment">//create a Stream&lt;List&lt;int&gt;&gt;</span>
+  options: Options(
+    headers: {
+      Headers.contentLengthHeader: postData.length, <span class="hljs-comment">// set content-length</span>
+    },
+  ),
+);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>…you can find all examples code <a href="https://github.com/flutterchina/dio/tree/master/example" rel="ugc">here</a>.</p>
+<h2 class="hash-header" id="dio-apis">Dio APIs <a href="https://pub.dev/packages/dio#dio-apis" class="hash-link">#</a></h2>
+<h3 class="hash-header" id="creating-an-instance-and-set-default-configs">Creating an instance and set default configs. <a href="https://pub.dev/packages/dio#creating-an-instance-and-set-default-configs" class="hash-link">#</a></h3>
+<p>You can create instance of Dio with an optional <code>BaseOptions</code> object:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">Dio dio = <span class="hljs-keyword">new</span> Dio(); <span class="hljs-comment">// with default Options</span>
+
+<span class="hljs-comment">// Set default configs</span>
+dio.options.baseUrl = <span class="hljs-string">"https://www.xx.com/api"</span>;
+dio.options.connectTimeout = <span class="hljs-number">5000</span>; <span class="hljs-comment">//5s</span>
+dio.options.receiveTimeout = <span class="hljs-number">3000</span>;
+
+<span class="hljs-comment">// or new Dio with a BaseOptions instance.</span>
+BaseOptions options = <span class="hljs-keyword">new</span> BaseOptions(
+    baseUrl: <span class="hljs-string">"https://www.xx.com/api"</span>,
+    connectTimeout: <span class="hljs-number">5000</span>,
+    receiveTimeout: <span class="hljs-number">3000</span>,
+);
+Dio dio = <span class="hljs-keyword">new</span> Dio(options);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>The core API in Dio instance is:</p>
+<p><strong>Future</strong></p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">response=<span class="hljs-keyword">await</span> request(
+    <span class="hljs-string">"/test"</span>,
+    data: {<span class="hljs-string">"id"</span>:<span class="hljs-number">12</span>,<span class="hljs-string">"name"</span>:<span class="hljs-string">"xx"</span>},
+    options: Options(method:<span class="hljs-string">"GET"</span>),
+);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="request-method-aliases">Request method aliases <a href="https://pub.dev/packages/dio#request-method-aliases" class="hash-link">#</a></h3>
+<p>For convenience aliases have been provided for all supported request methods.</p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<p><strong>Future</strong></p>
+<h2 class="hash-header" id="request-options">Request Options <a href="https://pub.dev/packages/dio#request-options" class="hash-link">#</a></h2>
+<p>The Options class describes the http request information and configuration. Each Dio instance has a base config for all requests maked by itself, and we can override the base config with [Options] when make a single request.  The  [BaseOptions] declaration as follows:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">{
+  <span class="hljs-comment">/// <span class="markdown">Http method.</span></span>
+  <span class="hljs-built_in">String</span> method;
+
+  <span class="hljs-comment">/// <span class="markdown">Request base url, it can contain sub path, like: "https://www.google.com/api/".</span></span>
+  <span class="hljs-built_in">String</span> baseUrl;
+
+  <span class="hljs-comment">/// <span class="markdown">Http request headers.</span></span>
+  <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">dynamic</span>&gt; headers;
+
+   <span class="hljs-comment">/// <span class="markdown">Timeout in milliseconds for opening  url.</span></span>
+  <span class="hljs-built_in">int</span> connectTimeout;
+
+   <span class="hljs-comment">/// <span class="markdown"> Whenever more than [receiveTimeout] (in milliseconds) passes between two events from response stream,</span></span>
+  <span class="hljs-comment">/// <span class="markdown"> [Dio] will throw the [DioError] with [DioErrorType.RECEIVE<span class="hljs-emphasis">_TIMEOUT].</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis"> Note: This is not the receiving time limitation.</span></span></span>
+  <span class="hljs-built_in">int</span> receiveTimeout;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">Request data, can be any type.</span></span></span>
+  T data;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">If the `path` starts with "http(s)", the `baseURL` will be ignored, otherwise,</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">it will be combined and then resolved with the baseUrl.</span></span></span>
+  <span class="hljs-built_in">String</span> path=<span class="hljs-string">""</span>;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">The request Content-Type. The default value is "application/json; charset=utf-8".</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">If you want to encode request body with "application/x-www-form-urlencoded",</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">you can set [Headers.formUrlEncodedContentType], and [Dio]</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">will automatically encode the request body.</span></span></span>
+  <span class="hljs-built_in">String</span> contentType;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">[responseType] indicates the type of data that the server will respond with</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">options which defined in [ResponseType] are `JSON`, `STREAM`, `PLAIN`.</span></span></span>
+  <span class="hljs-comment">///</span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">The default value is `JSON`, dio will parse response string to json object automatically</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">when the content-type of response is "application/json".</span></span></span>
+  <span class="hljs-comment">///</span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">If you want to receive response data with binary bytes, for example,</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">downloading a image, use `STREAM`.</span></span></span>
+  <span class="hljs-comment">///</span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">If you want to receive the response data with String, use `PLAIN`.</span></span></span>
+  ResponseType responseType;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">`validateStatus` defines whether the request is successful for a given</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">HTTP response status code. If `validateStatus` returns `true` ,</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">the request will be perceived as successful; otherwise, considered as failed.</span></span></span>
+  ValidateStatus validateStatus;
+
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">Custom field that you can retrieve it later in [Interceptor]、[Transformer] and the   [Response] object.</span></span></span>
+  <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">dynamic</span>&gt; extra;
+  
+  <span class="hljs-comment">/// <span class="markdown"><span class="hljs-emphasis">Common query parameters</span></span></span>
+  <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">dynamic</span> <span class="hljs-comment">/*String|Iterable&lt;String&gt;*/</span> &gt; queryParameters;  
+
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>There is a complete example <a href="https://github.com/flutterchina/dio/blob/master/example/options.dart" rel="ugc">here</a>.</p>
+<h2 class="hash-header" id="response-schema">Response Schema <a href="https://pub.dev/packages/dio#response-schema" class="hash-link">#</a></h2>
+<p>The response for a request contains the following information.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">{
+  <span class="hljs-comment">/// <span class="markdown">Response body. may have been transformed, please refer to [ResponseType].</span></span>
+  T data;
+  <span class="hljs-comment">/// <span class="markdown">Response headers.</span></span>
+  Headers headers;
+  <span class="hljs-comment">/// <span class="markdown">The corresponding request info.</span></span>
+  Options request;
+  <span class="hljs-comment">/// <span class="markdown">Http status code.</span></span>
+  <span class="hljs-built_in">int</span> statusCode;
+  <span class="hljs-comment">/// <span class="markdown">Whether redirect </span></span>
+  <span class="hljs-built_in">bool</span> isRedirect;  
+  <span class="hljs-comment">/// <span class="markdown">redirect info    </span></span>
+  <span class="hljs-built_in">List</span>&lt;RedirectInfo&gt; redirects ;
+  <span class="hljs-comment">/// <span class="markdown">Returns the final real request uri (maybe redirect). </span></span>
+  <span class="hljs-built_in">Uri</span> realUri;    
+  <span class="hljs-comment">/// <span class="markdown">Custom field that you can retrieve it later in <span class="hljs-code">`then`</span>.</span></span>
+  <span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-built_in">dynamic</span>&gt; extra;
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>When request is succeed, you will receive the response as follows:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">Response response = <span class="hljs-keyword">await</span> dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"https://www.google.com"</span>);
+<span class="hljs-built_in">print</span>(response.data);
+<span class="hljs-built_in">print</span>(response.headers);
+<span class="hljs-built_in">print</span>(response.request);
+<span class="hljs-built_in">print</span>(response.statusCode);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="interceptors">Interceptors <a href="https://pub.dev/packages/dio#interceptors" class="hash-link">#</a></h2>
+<p>For each dio instance, We can add one or more interceptors, by which we can intercept requests or responses before they are handled by <code>then</code> or <code>catchError</code>.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">dio.interceptors.add(InterceptorsWrapper(
+    onRequest:(RequestOptions options) <span class="hljs-keyword">async</span> {
+     <span class="hljs-comment">// Do something before request is sent</span>
+     <span class="hljs-keyword">return</span> options; <span class="hljs-comment">//continue</span>
+     <span class="hljs-comment">// If you want to resolve the request with some custom data，</span>
+     <span class="hljs-comment">// you can return a `Response` object or return `dio.resolve(data)`.</span>
+     <span class="hljs-comment">// If you want to reject the request with a error message,</span>
+     <span class="hljs-comment">// you can return a `DioError` object or return `dio.reject(errMsg)`</span>
+    },
+    onResponse:(Response response) <span class="hljs-keyword">async</span> {
+     <span class="hljs-comment">// Do something with response data</span>
+     <span class="hljs-keyword">return</span> response; <span class="hljs-comment">// continue</span>
+    },
+    onError: (DioError e) <span class="hljs-keyword">async</span> {
+     <span class="hljs-comment">// Do something with response error</span>
+     <span class="hljs-keyword">return</span>  e;<span class="hljs-comment">//continue</span>
+    }
+));
+
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="resolve-and-reject-the-request">Resolve and reject the request <a href="https://pub.dev/packages/dio#resolve-and-reject-the-request" class="hash-link">#</a></h3>
+<p>In all interceptors, you can interfere with their execution flow. If you want to resolve the request/response with some custom data，you can return a <code>Response</code> object or return <code>dio.resolve(data)</code>.  If you want to reject the request/response with a error message, you can return a <code>DioError</code> object or return <code>dio.reject(errMsg)</code> .</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">dio.interceptors.add(InterceptorsWrapper(
+  onRequest:(RequestOptions options) {
+   <span class="hljs-keyword">return</span> dio.resolve(<span class="hljs-string">"fake data"</span>)
+  },
+));
+Response response = <span class="hljs-keyword">await</span> dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/test"</span>);
+<span class="hljs-built_in">print</span>(response.data);<span class="hljs-comment">//"fake data"</span>
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="lockunlock-the-interceptors">Lock/unlock the interceptors <a href="https://pub.dev/packages/dio#lockunlock-the-interceptors" class="hash-link">#</a></h3>
+<p>You can lock/unlock the interceptors by calling their <code>lock()</code>/<code>unlock</code> method. Once the request/response interceptor is locked, the incoming request/response will be added to a queue before they enter the interceptor, they will not be continued until the interceptor is unlocked.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">tokenDio = <span class="hljs-keyword">new</span> Dio(); <span class="hljs-comment">//Create a new instance to request the token.</span>
+tokenDio.options = dio;
+dio.interceptors.add(InterceptorsWrapper(
+    onRequest:(Options options) <span class="hljs-keyword">async</span> {
+        <span class="hljs-comment">// If no token, request token firstly and lock this interceptor</span>
+        <span class="hljs-comment">// to prevent other request enter this interceptor.</span>
+        dio.interceptors.requestLock.lock();
+        <span class="hljs-comment">// We use a new Dio(to avoid dead lock) instance to request token.</span>
+        Response response = <span class="hljs-keyword">await</span> tokenDio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/token"</span>);
+        <span class="hljs-comment">//Set the token to headers</span>
+        options.headers[<span class="hljs-string">"token"</span>] = response.data[<span class="hljs-string">"data"</span>][<span class="hljs-string">"token"</span>];
+        dio.interceptors.requestLock.unlock();
+        <span class="hljs-keyword">return</span> options; <span class="hljs-comment">//continue</span>
+    }
+));
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>You can clean the waiting queue by calling <code>clear()</code>;</p>
+<h3 class="hash-header" id="aliases">aliases <a href="https://pub.dev/packages/dio#aliases" class="hash-link">#</a></h3>
+<p>When the <strong>request</strong> interceptor is locked, the incoming request will pause, this is equivalent to we locked the current dio instance, Therefore, Dio provied the two aliases for the <code>lock/unlock</code> of <strong>request</strong> interceptors.</p>
+<p><strong>dio.lock() ==  dio.interceptors.requestLock.lock()</strong></p>
+<p><strong>dio.unlock() ==  dio.interceptors.requestLock.unlock()</strong></p>
+<p><strong>dio.clear() ==  dio.interceptors.requestLock.clear()</strong></p>
+<h3 class="hash-header" id="example">Example <a href="https://pub.dev/packages/dio#example" class="hash-link">#</a></h3>
+<p>Because of security reasons, we need all the requests to set up a csrfToken in the header, if csrfToken does not exist, we need to request a csrfToken first, and then perform the network request, because the request csrfToken progress is asynchronous, so we need to execute this async request in request interceptor. The code is as follows:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">dio.interceptors.add(InterceptorsWrapper(
+    onRequest: (Options options) <span class="hljs-keyword">async</span> {
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'send request：path:<span class="hljs-subst">${options.path}</span>，baseURL:<span class="hljs-subst">${options.baseUrl}</span>'</span>);
+        <span class="hljs-keyword">if</span> (csrfToken == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"no token，request token firstly..."</span>);
+            <span class="hljs-comment">//lock the dio.</span>
+            dio.lock();
+            <span class="hljs-keyword">return</span> tokenDio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"/token"</span>).then((d) {
+                options.headers[<span class="hljs-string">"csrfToken"</span>] = csrfToken = d.data[<span class="hljs-string">'data'</span>][<span class="hljs-string">'token'</span>];
+                <span class="hljs-built_in">print</span>(<span class="hljs-string">"request token succeed, value: "</span> + d.data[<span class="hljs-string">'data'</span>][<span class="hljs-string">'token'</span>]);
+                <span class="hljs-built_in">print</span>(
+                    <span class="hljs-string">'continue to perform request：path:<span class="hljs-subst">${options.path}</span>，baseURL:<span class="hljs-subst">${options.path}</span>'</span>);
+                <span class="hljs-keyword">return</span> options;
+            }).whenComplete(() =&gt; dio.unlock()); <span class="hljs-comment">// unlock the dio</span>
+        } <span class="hljs-keyword">else</span> {
+            options.headers[<span class="hljs-string">"csrfToken"</span>] = csrfToken;
+            <span class="hljs-keyword">return</span> options;
+        }
+    }
+));
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>For complete codes click <a href="https://github.com/flutterchina/dio/blob/master/example/interceptor_lock.dart" rel="ugc">here</a>.</p>
+<h3 class="hash-header" id="log">Log <a href="https://pub.dev/packages/dio#log" class="hash-link">#</a></h3>
+<p>You can set  <code>LogInterceptor</code> to  print request/response log automaticlly, for example:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">dio.interceptors.add(LogInterceptor(responseBody: <span class="hljs-keyword">false</span>)); <span class="hljs-comment">//开启请求日志</span>
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="custom-interceptor">Custom Interceptor <a href="https://pub.dev/packages/dio#custom-interceptor" class="hash-link">#</a></h3>
+<p>You can custom interceptor by extending the <code>Interceptor</code> class. There is an example that implementing a simple cache policy: <a href="https://github.com/flutterchina/dio/blob/master/example/custom_cache_interceptor.dart" rel="ugc">custom cache interceptor</a>.</p>
+<h2 class="hash-header" id="cookie-manager">Cookie Manager <a href="https://pub.dev/packages/dio#cookie-manager" class="hash-link">#</a></h2>
+<p><a href="https://github.com/flutterchina/dio/tree/master/plugins/cookie_manager" rel="ugc">dio_cookie_manager</a> package is a cookie manager for Dio.</p>
+<h2 class="hash-header" id="handling-errors">Handling Errors <a href="https://pub.dev/packages/dio#handling-errors" class="hash-link">#</a></h2>
+<p>When a error occurs, Dio will wrap the <code>Error/Exception</code> to a <code>DioError</code>:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">//404</span>
+    <span class="hljs-keyword">await</span> dio.<span class="hljs-keyword">get</span>(<span class="hljs-string">"https://wendux.github.io/xsddddd"</span>);
+} <span class="hljs-keyword">on</span> DioError <span class="hljs-keyword">catch</span>(e) {
+    <span class="hljs-comment">// The request was made and the server responded with a status code</span>
+    <span class="hljs-comment">// that falls out of the range of 2xx and is also not 304.</span>
+    <span class="hljs-keyword">if</span>(e.response) {
+        <span class="hljs-built_in">print</span>(e.response.data)
+        <span class="hljs-built_in">print</span>(e.response.headers)
+        <span class="hljs-built_in">print</span>(e.response.request)
+    } <span class="hljs-keyword">else</span>{
+        <span class="hljs-comment">// Something happened in setting up or sending the request that triggered an Error</span>
+        <span class="hljs-built_in">print</span>(e.request)
+        <span class="hljs-built_in">print</span>(e.message)
+    }
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="dioerror-scheme">DioError scheme <a href="https://pub.dev/packages/dio#dioerror-scheme" class="hash-link">#</a></h3>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"> {
+  <span class="hljs-comment">/// <span class="markdown">Response info, it may be <span class="hljs-code">`null`</span> if the request can't reach to</span></span>
+  <span class="hljs-comment">/// <span class="markdown">the http server, for example, occurring a dns error, network is not available.</span></span>
+  Response response;
+
+  <span class="hljs-comment">/// <span class="markdown">Error descriptions.</span></span>
+  <span class="hljs-built_in">String</span> message;
+
+  DioErrorType type;
+
+  <span class="hljs-comment">/// <span class="markdown">The original error/exception object; It's usually not null when <span class="hljs-code">`type`</span></span></span>
+  <span class="hljs-comment">/// <span class="markdown">is DioErrorType.DEFAULT</span></span>
+  <span class="hljs-built_in">dynamic</span> error;
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="dioerrortype">DioErrorType <a href="https://pub.dev/packages/dio#dioerrortype" class="hash-link">#</a></h3>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-keyword">enum</span> DioErrorType {
+  <span class="hljs-comment">/// <span class="markdown">When opening  url timeout, it occurs.</span></span>
+  CONNECT_TIMEOUT,
+
+  <span class="hljs-comment">///<span class="markdown">It occurs when receiving timeout.</span></span>
+  RECEIVE_TIMEOUT,
+
+  <span class="hljs-comment">/// <span class="markdown">When the server response, but with a incorrect status, such as 404, 503...</span></span>
+  RESPONSE,
+
+  <span class="hljs-comment">/// <span class="markdown">When the request is cancelled, dio will throw a error with this type.</span></span>
+  CANCEL,
+
+  <span class="hljs-comment">/// <span class="markdown">Default error type, Some other Error. In this case, you can</span></span>
+  <span class="hljs-comment">/// <span class="markdown">read the DioError.error if it is not null.</span></span>
+  DEFAULT,
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="using-applicationx-www-form-urlencoded-format">Using application/x-www-form-urlencoded format <a href="https://pub.dev/packages/dio#using-applicationx-www-form-urlencoded-format" class="hash-link">#</a></h2>
+<p>By default, Dio serializes request data(except String type) to <code>JSON</code>. To send data in the <code>application/x-www-form-urlencoded</code> format instead, you can :</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-comment">//Instance level</span>
+dio.options.contentType= Headers.formUrlEncodedContentType;
+<span class="hljs-comment">//or works once</span>
+dio.post(<span class="hljs-string">"/info"</span>, data:{<span class="hljs-string">"id"</span>:<span class="hljs-number">5</span>}, 
+         options: Options(contentType:Headers.formUrlEncodedContentType ));
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="sending-formdata">Sending FormData <a href="https://pub.dev/packages/dio#sending-formdata" class="hash-link">#</a></h2>
+<p>You can also send FormData with Dio, which will send data in the <code>multipart/form-data</code>, and it supports uploading files.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">FormData formData = FormData.from({
+    <span class="hljs-string">"name"</span>: <span class="hljs-string">"wendux"</span>,
+    <span class="hljs-string">"age"</span>: <span class="hljs-number">25</span>,
+    <span class="hljs-string">"file"</span>: <span class="hljs-keyword">await</span> MultipartFile.fromFile(<span class="hljs-string">"./text.txt"</span>,filename: <span class="hljs-string">"upload.txt"</span>)
+});
+response = <span class="hljs-keyword">await</span> dio.post(<span class="hljs-string">"/info"</span>, data: formData);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>There is a complete example <a href="https://github.com/flutterchina/dio/blob/master/example/formdata.dart" rel="ugc">here</a>.</p>
+<h3 class="hash-header" id="multiple-files-upload">Multiple files upload <a href="https://pub.dev/packages/dio#multiple-files-upload" class="hash-link">#</a></h3>
+<p>There are two ways to add multiple files to <code>FormData</code>， the only difference is that upload keys are different for array types。</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">  FormData.fromMap({
+    <span class="hljs-string">"files"</span>: [
+      MultipartFile.fromFileSync(<span class="hljs-string">"./example/upload.txt"</span>,
+          filename: <span class="hljs-string">"upload.txt"</span>),
+      MultipartFile.fromFileSync(<span class="hljs-string">"./example/upload.txt"</span>,
+          filename: <span class="hljs-string">"upload.txt"</span>),
+    ]
+  });
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>The upload key eventually becomes "files[]"，This is because many back-end services add a middle bracket to key when they get an array of files. <strong>If you don't want “[]”</strong>，you should create FormData as follows（Don't use <code>FormData.fromMap</code>）:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">  <span class="hljs-keyword">var</span> formData = FormData();
+  formData.files.addAll([
+    MapEntry(
+      <span class="hljs-string">"files"</span>,
+       MultipartFile.fromFileSync(<span class="hljs-string">"./example/upload.txt"</span>,
+          filename: <span class="hljs-string">"upload.txt"</span>),
+    ),
+    MapEntry(
+      <span class="hljs-string">"files"</span>,
+      MultipartFile.fromFileSync(<span class="hljs-string">"./example/upload.txt"</span>,
+          filename: <span class="hljs-string">"upload.txt"</span>),
+    ),
+  ]);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="transformer">Transformer <a href="https://pub.dev/packages/dio#transformer" class="hash-link">#</a></h2>
+<p><code>Transformer</code> allows changes to the request/response data before it is sent/received to/from the server. This is only applicable for request methods 'PUT', 'POST', and 'PATCH'. Dio has already implemented a <code>DefaultTransformer</code>, and as the default <code>Transformer</code>. If you want to customize the transformation of request/response data, you can provide a <code>Transformer</code> by your self, and replace the <code>DefaultTransformer</code> by setting the <code>dio.transformer</code>.</p>
+<h3 class="hash-header" id="in-flutter">In flutter <a href="https://pub.dev/packages/dio#in-flutter" class="hash-link">#</a></h3>
+<p>If you use dio in flutter development, you'd better to decode json   in background with [compute] function.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">
+<span class="hljs-comment">// Must be top-level function</span>
+_parseAndDecode(<span class="hljs-built_in">String</span> response) {
+  <span class="hljs-keyword">return</span> jsonDecode(response);
+}
+
+parseJson(<span class="hljs-built_in">String</span> text) {
+  <span class="hljs-keyword">return</span> compute(_parseAndDecode, text);
+}
+
+<span class="hljs-keyword">void</span> main() {
+  ...
+  <span class="hljs-comment">//Custom jsonDecodeCallback</span>
+  (dio.transformer <span class="hljs-keyword">as</span> DefaultTransformer).jsonDecodeCallback = parseJson;
+  runApp(MyApp());
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h3 class="hash-header" id="other-example">Other Example <a href="https://pub.dev/packages/dio#other-example" class="hash-link">#</a></h3>
+<p>There is an example for <a href="https://github.com/flutterchina/dio/blob/master/example/transfomer.dart" rel="ugc">customizing Transformer</a>.</p>
+<h2 class="hash-header" id="httpclientadapter">HttpClientAdapter <a href="https://pub.dev/packages/dio#httpclientadapter" class="hash-link">#</a></h2>
+<p>HttpClientAdapter is a bridge between Dio and HttpClient.</p>
+<p>Dio implements standard and friendly API  for developer.</p>
+<p>HttpClient: It is the real object that makes Http requests.</p>
+<p>We can use any HttpClient not just <code>dart:io:HttpClient</code> to make the Http request.  And  all we need is providing a <code>HttpClientAdapter</code>. The default HttpClientAdapter for Dio is <code>DefaultHttpClientAdapter</code>.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">dio.httpClientAdapter = <span class="hljs-keyword">new</span> DefaultHttpClientAdapter();
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p><a href="https://github.com/flutterchina/dio/blob/master/example/adapter.dart" rel="ugc">Here</a> is a simple example to custom adapter.</p>
+<h3 class="hash-header" id="using-proxy">Using proxy <a href="https://pub.dev/packages/dio#using-proxy" class="hash-link">#</a></h3>
+<p><code>DefaultHttpClientAdapter</code> provide a callback to set proxy to <code>dart:io:HttpClient</code>, for example:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">'package:dio/dio.dart'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:dio/adapter.dart'</span>;
+...
+(dio.httpClientAdapter <span class="hljs-keyword">as</span> DefaultHttpClientAdapter).onHttpClientCreate = (client) {
+    <span class="hljs-comment">// config the http client</span>
+    client.findProxy = (uri) {
+        <span class="hljs-comment">//proxy all request to localhost:8888</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"PROXY localhost:8888"</span>;
+    };
+    <span class="hljs-comment">// you can also create a new HttpClient to dio</span>
+    <span class="hljs-comment">// return new HttpClient();</span>
+};
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>There is a complete example <a href="https://github.com/flutterchina/dio/blob/master/example/proxy.dart" rel="ugc">here</a>.</p>
+<h3 class="hash-header" id="https-certificate-verification">Https certificate verification <a href="https://pub.dev/packages/dio#https-certificate-verification" class="hash-link">#</a></h3>
+<p>There are two ways  to verify the https certificate. Suppose the certificate format is PEM, the code like:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-built_in">String</span> PEM=<span class="hljs-string">"XXXXX"</span>; <span class="hljs-comment">// certificate content</span>
+(dio.httpClientAdapter <span class="hljs-keyword">as</span> DefaultHttpClientAdapter).onHttpClientCreate  = (client) {
+    client.badCertificateCallback=(X509Certificate cert, <span class="hljs-built_in">String</span> host, <span class="hljs-built_in">int</span> port){
+        <span class="hljs-keyword">if</span>(cert.pem==PEM){ <span class="hljs-comment">// Verify the certificate</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    };
+};
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>Another way is creating a <code>SecurityContext</code> when create the <code>HttpClient</code>:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">(dio.httpClientAdapter <span class="hljs-keyword">as</span> DefaultHttpClientAdapter).onHttpClientCreate  = (client) {
+    SecurityContext sc = <span class="hljs-keyword">new</span> SecurityContext();
+    <span class="hljs-comment">//file is the path of certificate</span>
+    sc.setTrustedCertificates(file);
+    HttpClient httpClient = <span class="hljs-keyword">new</span> HttpClient(context: sc);
+    <span class="hljs-keyword">return</span> httpClient;
+};
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>In this way,  the format of certificate must be PEM or PKCS12.</p>
+<h2 class="hash-header" id="http2-support">Http2 support <a href="https://pub.dev/packages/dio#http2-support" class="hash-link">#</a></h2>
+<p><a href="https://github.com/flutterchina/dio/tree/master/plugins/http2_adapter" rel="ugc">dio_http2_adapter</a> package is a Dio HttpClientAdapter which support Http/2.0 .</p>
+<h2 class="hash-header" id="cancellation">Cancellation <a href="https://pub.dev/packages/dio#cancellation" class="hash-link">#</a></h2>
+<p>You can cancel a request using a <em>cancel token</em>. One token can be shared with multiple requests. When a token's  <code>cancel</code> method invoked, all requests with this token will be cancelled.</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs">CancelToken token = CancelToken();
+dio.<span class="hljs-keyword">get</span>(url1, cancelToken: token);
+dio.<span class="hljs-keyword">get</span>(url2, cancelToken: token);
+
+<span class="hljs-comment">// cancel the requests with "cancelled" message.</span>
+token.cancel(<span class="hljs-string">"cancelled"</span>);
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>There is a complete example <a href="https://github.com/flutterchina/dio/blob/master/example/cancel_request.dart" rel="ugc">here</a>.</p>
+<h2 class="hash-header" id="extends-dio-class">Extends Dio class <a href="https://pub.dev/packages/dio#extends-dio-class" class="hash-link">#</a></h2>
+<p><code>Dio</code> is a abstract class with factory constructor，so we don't extend <code>Dio</code> class directy. For this purpose,  we can extend <code>DioForNative</code> or <code>DioForBrowser</code> instead, for example:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">'package:dio/dio.dart'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'package:dio/native_imp.dart'</span>; <span class="hljs-comment">//If in browser, import 'package:dio/browser_imp.dart'</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Http</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">DioForNative</span> </span>{
+  Http([BaseOptions options]):<span class="hljs-keyword">super</span>(options){
+    <span class="hljs-comment">// do something</span>
+  }
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<p>We can also implement our Dio client:</p>
+<div class="-pub-pre-copy-container"><pre><code class="language-dart hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyDio</span> <span class="hljs-title">with</span> <span class="hljs-title">DioMixin</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Dio</span></span>{
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre><div class="-pub-pre-copy-button" title="copy to clipboard"></div><div class="-pub-pre-copy-feedback">copied to clipboard</div></div>
+<h2 class="hash-header" id="copyright--license">Copyright &amp; License <a href="https://pub.dev/packages/dio#copyright--license" class="hash-link">#</a></h2>
+<p>This open source project authorized by <a href="https://flutterchina.club/" rel="ugc">https://flutterchina.club</a> , and the license is MIT.</p>
+<h2 class="hash-header" id="features-and-bugs">Features and bugs <a href="https://pub.dev/packages/dio#features-and-bugs" class="hash-link">#</a></h2>
+<p>Please file feature requests and bugs at the <a href="https://github.com/flutterchina/dio/issues" rel="ugc">issue tracker</a>.</p>
+<h2 class="hash-header" id="donate">Donate <a href="https://pub.dev/packages/dio#donate" class="hash-link">#</a></h2>
+<p>Buy a cup of coffee for me (Scan by wechat)：</p>
+<p><img src="./dio _ Dart Package_files/pay.jpeg" alt=""></p>
+
+      </section>
+  </div>
+</div>
+
+    </div>
+
+      <aside class="detail-info-box">
+        
+
+<a class="packages-scores" href="https://pub.dev/packages/dio/score">
+  <div class="packages-score packages-score-like">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">1580</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">likes</div>
+
+  </div>
+  <div class="packages-score packages-score-health">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">90</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">pub points</div>
+
+  </div>
+  <div class="packages-score packages-score-popularity">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">99</span><span class="packages-score-value-sign">%</span>
+</div>
+<div class="packages-score-label">popularity</div>
+
+  </div>
+</a>
+
+
+
+<h3 class="title">Publisher</h3>
+<p>
+  <a href="https://pub.dev/publishers/flutterchina.club"><img class="-pub-publisher-shield" title="Published by a pub.dev verified publisher" src="./dio _ Dart Package_files/verified-publisher-blue(1).svg">flutterchina.club</a>
+</p>
+
+<h3 class="title pkg-infobox-metadata">Metadata</h3>
+  <p>A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.</p>
+<p>
+  <a class="link" href="https://github.com/flutterchina/dio" rel="ugc">Repository (GitHub)</a><br>
+  <a class="link" href="https://github.com/flutterchina/dio/issues" rel="ugc">View/report issues</a><br>
+</p>
+
+<h3 class="title">Documentation</h3>
+<p>
+    <a class="link" href="https://pub.dev/documentation/dio/latest/">API reference</a><br>
+</p>
+
+
+<h3 class="title">License</h3>
+<p>MIT (<a href="https://github.com/flutterchina/dio/blob/master/LICENSE">LICENSE</a>)</p>
+
+<h3 class="title">Dependencies</h3>
+<p><a href="https://pub.dev/packages/http_parser">http_parser</a>, <a href="https://pub.dev/packages/path">path</a></p>
+
+<h3 class="title">More</h3>
+<p><a href="https://pub.dev/packages?q=dependency%3Adio" rel="nofollow">Packages that depend on dio</a></p>
+
+      </aside>
+  </div>
+
+  <script type="application/ld+json">
+{"@context":"http://schema.org","@type":"SoftwareSourceCode","name":"dio","version":"3.0.10","description":"dio - A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.","url":"https://pub.dev/packages/dio","dateCreated":"2018-04-21T17:17:44.474455Z","dateModified":"2020-08-07T14:29:31.999312Z","programmingLanguage":"Dart","image":"https://pub.dev/static/img/pub-dev-icon-cover-image.png","license":"https://github.com/flutterchina/dio/blob/master/LICENSE"}
+</script>
+
+</div>
+
+<div class="detail-metadata">
+  <h3 class="detail-metadata-title"><span class="detail-metadata-toggle">←</span> Metadata</h3>
+
+  <div class="detail-info-box">
+  
+
+<a class="packages-scores" href="https://pub.dev/packages/dio/score">
+  <div class="packages-score packages-score-like">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">1580</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">likes</div>
+
+  </div>
+  <div class="packages-score packages-score-health">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">90</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">pub points</div>
+
+  </div>
+  <div class="packages-score packages-score-popularity">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">99</span><span class="packages-score-value-sign">%</span>
+</div>
+<div class="packages-score-label">popularity</div>
+
+  </div>
+</a>
+
+
+
+<h3 class="title">Publisher</h3>
+<p>
+  <a href="https://pub.dev/publishers/flutterchina.club"><img class="-pub-publisher-shield" title="Published by a pub.dev verified publisher" src="./dio _ Dart Package_files/verified-publisher-blue(1).svg">flutterchina.club</a>
+</p>
+
+<h3 class="title pkg-infobox-metadata">Metadata</h3>
+  <p>A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.</p>
+<p>
+  <a class="link" href="https://github.com/flutterchina/dio" rel="ugc">Repository (GitHub)</a><br>
+  <a class="link" href="https://github.com/flutterchina/dio/issues" rel="ugc">View/report issues</a><br>
+</p>
+
+<h3 class="title">Documentation</h3>
+<p>
+    <a class="link" href="https://pub.dev/documentation/dio/latest/">API reference</a><br>
+</p>
+
+
+<h3 class="title">License</h3>
+<p>MIT (<a href="https://github.com/flutterchina/dio/blob/master/LICENSE">LICENSE</a>)</p>
+
+<h3 class="title">Dependencies</h3>
+<p><a href="https://pub.dev/packages/http_parser">http_parser</a>, <a href="https://pub.dev/packages/path">path</a></p>
+
+<h3 class="title">More</h3>
+<p><a href="https://pub.dev/packages?q=dependency%3Adio" rel="nofollow">Packages that depend on dio</a></p>
+
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <a class="link" href="https://dart.dev/">Dart language</a>
+  <a class="link sep" href="https://pub.dev/policy">Policy</a>
+  <a class="link sep" href="https://www.google.com/intl/en/policies/terms/">Terms</a>
+  <a class="link sep" href="https://developers.google.com/terms/">API Terms</a>
+  <a class="link sep" href="https://pub.dev/security">Security</a>
+  <a class="link sep" href="https://www.google.com/intl/en/policies/privacy/">Privacy</a>
+  <a class="link sep" href="https://pub.dev/help">Help</a>
+  <a class="link sep icon" href="https://pub.dev/feed.atom">
+    <img src="./dio _ Dart Package_files/rss-feed-icon.svg" class="inline-icon" alt="RSS/atom feed" title="RSS/atom feed">
+  </a>
+  <a class="link icon github_issue" href="https://github.com/dart-lang/pub-dev/issues/new?body=URL%3A+https%3A%2F%2Fpub.dev%2Fpackages%2Fdio%0A%0A%3CDescribe+your+issue+or+suggestion+here%3E&amp;title=%3CSummarize+your+issues+here%3E&amp;labels=Area%3A+site+feedback">
+    <img src="./dio _ Dart Package_files/bug-report-white-96px.png" class="inline-icon" alt="Report an issue with this site" title="Report an issue with this site">
+  </a>
+</footer>
+<script src="./dio _ Dart Package_files/highlight.pack.js.download"></script>
+<script src="./dio _ Dart Package_files/init.js.download"></script>
+
+
+<iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" src="./dio _ Dart Package_files/iframe.html" style="position: absolute; width: 1px; height: 1px; inset: -9999px; display: none;"></iframe></body></html>

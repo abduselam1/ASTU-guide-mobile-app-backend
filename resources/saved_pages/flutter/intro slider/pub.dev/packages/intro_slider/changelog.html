@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Mirrored from pub.dev/packages/intro_slider/changelog by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Mar 2021 07:55:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <script async="async" src="../../../www.googletagmanager.com/gtme317.js?id=GTM-MX6DBN9"></script>
+  <script src="../../static/js/gtm5e5d.js?hash=fltt8rc82ob3timp0tvnk6b136c2fqn0"></script>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Twitter tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dart_lang" />
+  <meta name="twitter:description" content="Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app" />
+  <meta name="twitter:image" content="https://pub.dev/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g" />
+
+  <!-- Facebook OG tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dart packages" />
+  <meta property="og:title" content="intro_slider | Flutter Package" />
+  <meta property="og:description" content="Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app" />
+  <meta property="og:image" content="https://pub.dev/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g" />
+  <meta property="og:url" content="https://pub.dev/packages/intro_slider/changelog" />
+
+  <title>intro_slider | Flutter Package</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500|Google+Sans+Display:400|Roboto:300,400,500,700|Roboto+Mono:300,400,700" rel="stylesheet" />
+  <meta content="/static/img/pub-dev-icon-cover-image.png?hash=vg86r2r3mbs62hiv4ldop0ife5um2g5g" />
+  <link rel="shortcut icon" href="../../static/img/flutter-logo-32x327ee8.png?hash=4hh64sfc160bkthaobnlp5brguc4hfne" />
+  <link rel="search" type="application/opensearchdescription+xml" title="Dart packages" href="https://pub.dev/static/osd.xml?hash=uhkvaq6tn5ujmk0so48em6cukeb08c2d" />
+  <link rel="canonical" href="changelog.html"/>
+  <meta name="description" content="Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app" />
+  <link rel="alternate" type="application/atom+xml" title="Updated Packages Feed for Pub" href="https://pub.dev/feed.atom" />
+  <link href="../../static/material/material-components-web.minb446.css?hash=p08d4642n883220v3sav33212io7mf4p" rel="stylesheet" type="text/css" />
+  <link href="../../static/highlight/githubabb7.css?hash=ddjqjhh3o6fcmi9g9no3i3id8s23itod" rel="stylesheet" />
+  <link href="../../static/css/github-markdowne1e8.css?hash=t2ti0tfkd3q7dsh5njovil42c3bnhf5s" rel="stylesheet" type="text/css" />
+  <link href="../../static/css/stylea18f.css?hash=ifmve487br90s62h28mnd6ga5o01knp0" rel="stylesheet" type="text/css" />
+  <script src="../../static/material/material-components-web.mina8ff.js?hash=igi6ia9p8nu341u56joei27dp56mljuv" defer="defer"></script>
+  <script src="../../static/js/script.dart42fe.js?hash=iqc0s90rf5t0l55l7tkqq32on0qtrus1" defer="defer"></script>
+  <meta name="google-signin-client_id" content="818368855108-e8skaopm5ih5nbb82vhh66k7ft5o7dn3.apps.googleusercontent.com" />
+  <script src="../../../apis.google.com/js/platform92a2.js?onload=pubAuthInit" defer="defer"></script>
+  <meta name="pub-page-data" content="eyJwa2dEYXRhIjp7InBhY2thZ2UiOiJpbnRyb19zbGlkZXIiLCJ2ZXJzaW9uIjoiMi4zLjQiLCJsaWtlcyI6NDcyLCJpc0Rpc2NvbnRpbnVlZCI6ZmFsc2V9fQ=="/>
+</head>
+<body class="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX6DBN9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="site-header">
+  <button class="hamburger"></button>
+  <a class="logo" href="https://pub.dev/">
+    <img class="site-logo" src="../../static/img/pub-dev-logo-2x2141.png?hash=umitaheu8hl7gd3mineshk2koqfngugi" alt="pub logo" />
+  </a>
+  <div class="site-header-space"></div>
+  <div class="site-header-mask"></div>
+  <div class="site-header-search">
+    <form action="https://pub.dev/packages" method="GET">
+      <input class="site-header-search-input" name="q" placeholder="New search..." autocomplete="on" />
+    </form>
+  </div>
+  <div class="site-header-nav scroll-container">
+    <div class="nav-login-container">
+      <button class="nav-main-button link" id="-account-login">Sign in</button>
+    </div>
+    <div class="nav-container nav-help-container hoverable">
+      <button class="nav-main-button">Help</button>
+      <div class="nav-hover-popup">
+        <div class="nav-table-columns">
+          <div class="nav-table-column">
+            <h3>Pub.dev</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/search">Searching for packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/scoring">Package scoring and pub points</a>
+          </div>
+          <div class="nav-table-column">
+            <h3>Flutter</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/using-packages/">Using packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/developing-packages/">Developing packages and plugins</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+          </div>
+          <div class="nav-table-column">
+            <h3>Dart</h3>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/get-started">Using packages</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Pub.dev <img class="foldable-icon" src="https://pub.dev/static/img/nav-mobile-foldable-icon.svg?hash=2rnbsms4rvaiucq4t1dbmeagp1eqq4b3" /></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/search">Searching for packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://pub.dev/help/scoring">Package scoring and pub points</a>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Flutter <img class="foldable-icon" src="https://pub.dev/static/img/nav-mobile-foldable-icon.svg?hash=2rnbsms4rvaiucq4t1dbmeagp1eqq4b3" /></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/using-packages/">Using packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://flutter.io/developing-packages/">Developing packages and plugins</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+      </div>
+    </div>
+    <div class="nav-container nav-help-container-mobile foldable">
+      <h3 class="foldable-button">Dart <img class="foldable-icon" src="https://pub.dev/static/img/nav-mobile-foldable-icon.svg?hash=2rnbsms4rvaiucq4t1dbmeagp1eqq4b3" /></h3>
+      <div class="foldable-content">
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/get-started">Using packages</a>
+        <a class="nav-link" target="_blank" rel="noopener" href="https://dart.dev/tools/pub/publishing">Publishing a package</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="banner-container">
+</div>
+
+
+<main class="container">
+
+<div class="detail-wrapper -active -has-info-box">
+  
+
+<div class="detail-header -is-loose">
+  <div class="detail-container">
+    <div class="detail-header-outer-block">
+      <div class="detail-header-content-block">
+        <h1 class="title">
+intro_slider 2.3.4
+
+<span class="pkg-page-title-copy">
+  <img class="pkg-page-title-copy-icon"
+       data-copy-content="intro_slider: ^2.3.4"
+       data-ga-click-event="copy-package-version"
+       src="https://pub.dev/static/img/content-copy-icon.svg?hash=fg6h81ph6ii0740g39jkvci8jiqi2j4p"
+       title="Copy &quot;intro_slider: ^2.3.4&quot; to clipboard" />
+  <div class="pkg-page-title-copy-feedback"><span class="code">intro_slider: ^2.3.4</span> copied to clipboard</div>
+</span>
+</h1>
+        <div class="metadata">
+Published <span>Feb 17, 2021</span>
+
+
+
+</div>
+        <div class="detail-tags-and-like">
+          <div class="detail-tags"><div class="-pub-tag-badge">
+  <span class="tag-badge-main" title="Packages compatible with Flutter SDK">Flutter</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the Android platform">Android</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the iOS platform">iOS</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the Linux platform">Linux</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the macOS platform">macOS</span>
+  <span class="tag-badge-sub" title="Packages compatible with Flutter on the Windows platform">Windows</span>
+</div>
+</div>
+          <div class="detail-like">
+              <button
+                  id="-pub-like-icon-button"
+                  class="mdc-icon-button"
+                  aria-label="Like this package"
+                  data-ga-click-event="toggle-like"
+                  aria-hidden="true"
+                  aria-pressed="true">
+                <img
+                    height="18"
+                    width="18"
+                    src="https://pub.dev/static/img/like-inactive.svg?hash=107p369br29frvj1k7giq3qfai6fni37"
+                    class="mdc-icon-button__icon"/>
+                <img
+                    height="18"
+                    width="18"
+                    src="https://pub.dev/static/img/like-active.svg?hash=sevb7pqv8o8a1985ouje1ddubkni62rr"
+                    class="mdc-icon-button__icon mdc-icon-button__icon--on"/>
+              </button>
+              <span class="likes-count"><span id="likes-count">472</span></span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="detail-container">
+    <div class="detail-lead">
+      <div class="detail-metadata-toggle">
+        <div class="detail-metadata-toggle-icon">&rightarrow;</div>
+        <h3 class="detail-lead-title">Metadata</h3>
+      </div>
+      <p class="detail-lead-text">Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app</p>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-tabs">
+      
+<div class="detail-tabs-wide-header">
+  <div class="detail-container">
+    <ul class="detail-tabs-header">
+        <li class="detail-tab tab-link detail-tab-readme-title" role="button"><a href="../intro_slider.html">Readme</a></li>
+        <li class="detail-tab tab-button detail-tab-changelog-title -active" role="button">Changelog</li>
+        <li class="detail-tab tab-link detail-tab-example-title" role="button"><a href="example.html">Example</a></li>
+        <li class="detail-tab tab-link detail-tab-installing-title" role="button"><a href="install.html">Installing</a></li>
+        <li class="detail-tab tab-link detail-tab-versions-title" role="button"><a href="versions.html">Versions</a></li>
+        <li class="detail-tab tab-link detail-tab-analysis-title" role="button"><a href="score.html">Scores</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="detail-container detail-body-main">
+  <div class="detail-tabs-content">
+      <section class="tab-content -active markdown-body">
+        <div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="234">2.3.4 <a href="#234" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Allow custom the physics horizontal scroll for the slide</li>
+<li><code>slides</code> not require when using <code>listCustomTabs</code></li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="233">2.3.3 <a href="#233" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update scrollbar</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="232">2.3.2 <a href="#232" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add scrollbar for tab content</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="231">2.3.1 <a href="#231" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update example (migrate to AndroidX)</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="230">2.3.0 <a href="#230" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add isShowNextBtn</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="229">2.2.9 <a href="#229" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Dispose tabController/animations.</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="228">2.2.8 <a href="#228" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Allow supplying a custom title and/or description widgets.</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="227">2.2.7 <a href="#227" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Set backgroundColor to Colors.amberAccent when not define</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="226">2.2.6 <a href="#226" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Remove some unnecessary files</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="225">2.2.5 <a href="#225" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update docs</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="224">2.2.4 <a href="#224" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update docs</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="223">2.2.3 <a href="#223" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix dot animation don't working properly on RTL language</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="222">2.2.2 <a href="#222" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add refFuncGoToTab, then we can move to any tab index programmatically</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="221">2.2.1 <a href="#221" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix color dots displaced to the right on last slide</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="220">2.2.0 <a href="#220" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add more dots animation</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="211">2.1.1 <a href="#211" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add can set background color for all slides</li>
+<li>Add can hide DONE button</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="210">2.1.0 <a href="#210" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add animation when dot indicator is moving</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="203">2.0.3 <a href="#203" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix error when onTabChangeCompleted not defined</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="202">2.0.2 <a href="#202" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add callback onTabChangeCompleted</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="201">2.0.1 <a href="#201" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add custom boxfit to foreground image</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="200">2.0.0 <a href="#200" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add custom your own tabs</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="123">1.2.3 <a href="#123" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="122">1.2.2 <a href="#122" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Remove MaterialApp and replacing it by a Scaffold since should only be one MaterialApp() per application</li>
+<li>Remove locale since it should handle by primary application (and it is configured by MaterialApp), not by the plugin.</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="121">1.2.1 <a href="#121" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add optional onSkipPress</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="120">1.2.0 <a href="#120" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add PREV button and optimize code</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="119">1.1.9 <a href="#119" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add default go to last page at onSkipPress</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="118">1.1.8 <a href="#118" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add configuration able to scroll</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="117">1.1.7 <a href="#117" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix content scroll overlain bottom view</li>
+<li>Add set width of done, next button</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="116">1.1.6 <a href="#116" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add option show or hide the status bar</li>
+<li>Adding locale feature, adjust bottom navigation</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="115">1.1.5 <a href="#115" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix margin not a type of double</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="114">1.1.4 <a href="#114" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Format code</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="113">1.1.3 <a href="#113" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add background image</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="112">1.1.2 <a href="#112" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add custom center widget</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="111">1.1.1 <a href="#111" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update docs and remove redundant attributes at slide</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="110">1.1.0 <a href="#110" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add set max number of lines at title</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="109">1.0.9 <a href="#109" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Fix navigate example</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="108">1.0.8 <a href="#108" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Change color options to be instances of <code>Color</code> instead <code>int</code></li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="107">1.0.7 <a href="#107" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add onCLickImage and maxLines text description</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="106">1.0.6 <a href="#106" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add gradient background color</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="105">1.0.5 <a href="#105" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Add more attribute</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="104">1.0.4 <a href="#104" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update info</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="103">1.0.3 <a href="#103" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update info</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="102">1.0.2 <a href="#102" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update info</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="101">1.0.1 <a href="#101" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="100">1.0.0 <a href="#100" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Update</li>
+</ul>
+</div>
+</div>
+<div class="changelog-entry">
+<h2 class="changelog-version hash-header" id="001">0.0.1 <a href="#001" class="hash-link">#</a></h2>
+<div class="changelog-content">
+<ul>
+<li>Initial Release</li>
+</ul>
+</div>
+</div>
+
+      </section>
+  </div>
+</div>
+
+    </div>
+
+      <aside class="detail-info-box">
+        
+
+<a class="packages-scores"
+   href="score.html">
+  <div class="packages-score packages-score-like">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">472</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">likes</div>
+
+  </div>
+  <div class="packages-score packages-score-health">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">90</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">pub points</div>
+
+  </div>
+  <div class="packages-score packages-score-popularity">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">97</span><span class="packages-score-value-sign">%</span>
+</div>
+<div class="packages-score-label">popularity</div>
+
+  </div>
+</a>
+
+
+
+
+<h3 class="title pkg-infobox-metadata">Metadata</h3>
+  <p>Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app</p>
+<p>
+  <a class="link" href="https://github.com/duytq94/flutter-intro-slider" rel="ugc">Repository (GitHub)</a><br/>
+  <a class="link" href="https://github.com/duytq94/flutter-intro-slider/issues" rel="ugc">View&#x2F;report issues</a><br/>
+</p>
+
+<h3 class="title">Documentation</h3>
+<p>
+    <a class="link" href="https://pub.dev/documentation/intro_slider/latest/">API reference</a><br/>
+</p>
+
+<h3 class="title">Uploader</h3>
+<p><span class="author"><a href="https://pub.dev/packages?q=email%3Atranquangduy7994%40gmail.com" title="Search packages from tranquangduy7994@gmail.com" rel="nofollow">tranquangduy7994@gmail.com</a></span></p>
+
+<h3 class="title">License</h3>
+<p>MIT (<a href="https://github.com/duytq94/flutter-intro-slider/blob/master/LICENSE">LICENSE</a>)</p>
+
+<h3 class="title">Dependencies</h3>
+<p><a href="https://api.flutter.dev/">flutter</a></p>
+
+<h3 class="title">More</h3>
+<p><a href="https://pub.dev/packages?q=dependency%3Aintro_slider" rel="nofollow">Packages that depend on intro_slider</a></p>
+
+      </aside>
+  </div>
+
+  <script type="application/ld+json">
+{"@context":"http://schema.org","@type":"SoftwareSourceCode","name":"intro_slider","version":"2.3.4","description":"intro_slider - Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app","url":"https://pub.dev/packages/intro_slider","dateCreated":"2018-08-27T16:20:56.561309Z","dateModified":"2021-02-17T04:46:29.964914Z","programmingLanguage":"Dart","image":"https://pub.dev/static/img/pub-dev-icon-cover-image.png","license":"https://github.com/duytq94/flutter-intro-slider/blob/master/LICENSE"}
+</script>
+
+</div>
+
+<div class="detail-metadata">
+  <h3 class="detail-metadata-title"><span class="detail-metadata-toggle">&leftarrow;</span> Metadata</h3>
+
+  <div class="detail-info-box">
+  
+
+<a class="packages-scores"
+   href="score.html">
+  <div class="packages-score packages-score-like">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">472</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">likes</div>
+
+  </div>
+  <div class="packages-score packages-score-health">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">90</span><span class="packages-score-value-sign"></span>
+</div>
+<div class="packages-score-label">pub points</div>
+
+  </div>
+  <div class="packages-score packages-score-popularity">
+    
+<div class="packages-score-value -has-value">
+  <span class="packages-score-value-number">97</span><span class="packages-score-value-sign">%</span>
+</div>
+<div class="packages-score-label">popularity</div>
+
+  </div>
+</a>
+
+
+
+
+<h3 class="title pkg-infobox-metadata">Metadata</h3>
+  <p>Flutter Intro Slider is a flutter plugin that helps you make a cool intro for your app</p>
+<p>
+  <a class="link" href="https://github.com/duytq94/flutter-intro-slider" rel="ugc">Repository (GitHub)</a><br/>
+  <a class="link" href="https://github.com/duytq94/flutter-intro-slider/issues" rel="ugc">View&#x2F;report issues</a><br/>
+</p>
+
+<h3 class="title">Documentation</h3>
+<p>
+    <a class="link" href="https://pub.dev/documentation/intro_slider/latest/">API reference</a><br/>
+</p>
+
+<h3 class="title">Uploader</h3>
+<p><span class="author"><a href="https://pub.dev/packages?q=email%3Atranquangduy7994%40gmail.com" title="Search packages from tranquangduy7994@gmail.com" rel="nofollow">tranquangduy7994@gmail.com</a></span></p>
+
+<h3 class="title">License</h3>
+<p>MIT (<a href="https://github.com/duytq94/flutter-intro-slider/blob/master/LICENSE">LICENSE</a>)</p>
+
+<h3 class="title">Dependencies</h3>
+<p><a href="https://api.flutter.dev/">flutter</a></p>
+
+<h3 class="title">More</h3>
+<p><a href="https://pub.dev/packages?q=dependency%3Aintro_slider" rel="nofollow">Packages that depend on intro_slider</a></p>
+
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <a class="link" href="https://dart.dev/">Dart language</a>
+  <a class="link sep" href="https://pub.dev/policy">Policy</a>
+  <a class="link sep" href="https://www.google.com/intl/en/policies/terms/">Terms</a>
+  <a class="link sep" href="https://developers.google.com/terms/">API Terms</a>
+  <a class="link sep" href="https://pub.dev/security">Security</a>
+  <a class="link sep" href="https://www.google.com/intl/en/policies/privacy/">Privacy</a>
+  <a class="link sep" href="https://pub.dev/help">Help</a>
+  <a class="link sep icon" href="https://pub.dev/feed.atom">
+    <img src="https://pub.dev/static/img/rss-feed-icon.svg?hash=qaireqqf4r443g74pud49henn6vdksu0" class="inline-icon" alt="RSS/atom feed" title="RSS/atom feed"/>
+  </a>
+  <a class="link icon github_issue" href="https://github.com/dart-lang/pub-dev/issues/new">
+    <img src="../../static/img/bug-report-white-96px172f.png?hash=c47ejrlqq8ag0bnr78qa70vce3gf91k7" class="inline-icon" alt="Report an issue with this site" title="Report an issue with this site"/>
+  </a>
+</footer>
+<script src="../../static/highlight/highlight.packd480.js?hash=qm1bd9fhqhr435q40lqctb0optu30ss3"></script>
+<script src="../../static/highlight/initd3e6.js?hash=0nl9tmdd9v9m0tfg7agjjb8epq8krqp6"></script>
+</body>
+
+<!-- Mirrored from pub.dev/packages/intro_slider/changelog by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Mar 2021 07:55:44 GMT -->
+</html>
